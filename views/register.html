@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="images/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/250ed1169a.js" crossorigin="anonymous"></script>
+    <link href="CSS/styles.css" rel="stylesheet">
+</head>
+<body>
+    <form class="registro" action="/register" method="POST">
+        <p>
+            <input type="text" name="nombre" placeholder="Nombre y apellido">
+        </p>
+        <p>
+            <input type="text" name="username" placeholder="Nombre de usuario">
+        </p>
+        <h2>Fecha de nacimiento</h2>
+        <p>
+            <input type="date" name="birth">
+        </p>
+        <p>
+            <input type="radio" name="usertype" value="Vendedor">Vendedor
+            <input type="radio" name="usertype" value="Comprador">Comprador
+        </p>
+        <p>
+            <label for="role">Tipo de perfil</label>
+            <input type="text" name="role" placeholder="Comprador/Vendedor">
+        </p>
+        <p>
+            <label>Categorías de interes</label>
+            <input type="checkbox" name="interes" value="Electro">
+            <input type="checkbox" name="interes" value="Moda">
+            <input type="checkbox" name="interes" value="Hogar">
+            <input type="checkbox" name="interes" value="Juguetería">
+            <input type="checkbox" name="interes" value="Vida sana">
+        </p>
+        <p>
+            <label>Foto de usuario</label>
+            <input type="file" name="avatar" accept=".jpg">
+        </p>
+        <p>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña">
+        </p>
+        <p>
+            <label for="ccontraseña">Confirmar contraseña</label>
+            <input type="password" name="ccontraseña">
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+        <p>
+            <button type="reset">Cancelar</button>
+        </p>
+    </form>
+</body>
+</html>
