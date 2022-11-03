@@ -4,7 +4,8 @@ const path = require("path");
 
 app.use(express.static("public"));
 
-app.listen(4000,()=>
+const port = process.env.PORT || 3001;
+app.listem(port,()=>
     console.log("Server UP")
 );
 
